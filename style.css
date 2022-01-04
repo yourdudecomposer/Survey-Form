@@ -60,6 +60,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
 
 
 }
@@ -119,13 +120,22 @@ input, select, textarea {
 }
 
 .group {
-  border-bottom: 2px solid rgb(255, 0, 0);
   padding-bottom: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 60px;
+
 }
 
+.group {
+position: relative;
+    z-index : 1;
+}
 
-
-
-       
-
+.group::before {
+  content : "";
+  position: absolute;
+  left    :10%;
+  bottom  : -10px;
+  height  : 1px;
+  width   : 80%;  /* or 100px */
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
