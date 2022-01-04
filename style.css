@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: large;
+  color: white;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background:rgba(25, 68, 160, 0.89)
+  ;
+  background-image:
+  linear-gradient(
+      180deg,
+      rgba(88, 7, 11, 0.719),
+      rgba(40, 76, 153, 0.89)
+    ),
+    url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .container {
+    border: 2px solid red;
+} */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+header {
+  /* border: 2px solid green; */
+  text-align: center;
+}
+
+form {
+  padding: 10px;
+  background: black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+#description {
+font-style: italic;
+font-weight: 200;
+margin: 10px;
+text-shadow: 1px 1px 1px rgba(0, 0, 0);
+}
+
+.group{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-bottom:20px ;
+
+}
+
+@media (max-width: 576px) {
+  .group {
+    width: 100%;
+  }
+}
+input, select, textarea {
+  margin-top: 10px;
+}
+
+#name, #email, #number{
+  height: 30px;
+}
+#dropdown {
+  height: 35px;
+}
+ #circle-one {
+   width: 25px;
+   height: 25px;
+   margin-left: 10px;
+   position: relative;
+   top: 5px;
+
+ }
+
+ .rect44 {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.rect {
+  max-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.group {
+  border-bottom: 2px solid rgb(255, 0, 0);
+  padding-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+
+
+
+       
+
