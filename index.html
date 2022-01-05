@@ -19,19 +19,19 @@
         <form id="survey-form">
             <div class="group">
                 <label for="name" id="name-label">What is your name?</label>
-                <input id="name" placeholder="Type here" required>
+                <input name="name" id="name" placeholder="Type here" required>
             </div>
             <div class="group">
                 <label for="email" id="email-label">What is your email?</label>
-                <input type="email" id="email" placeholder="And here" required>
+                <input name="email" type="email" id="email" placeholder="And here" required>
             </div>
             <div class="group">
                 <label for="number" id="number-label">How old are you? (actually never mind)</label>
-                <input type="number" id="number" min="18" max="102" placeholder="18 - 102">
+                <input name="age" type="number" id="number" min="18" max="102" placeholder="18 - 102">
             </div>
             <div class="group">
                 <p>How about select some word?</p>
-                <select name='hhh' id="dropdown">
+                <select name='someWord' id="dropdown">
                     <option>Aaaa</option>
                     <option>Bbb</option>
                     <option>Ccccc</option>
@@ -43,34 +43,35 @@
             <div class="group">
                 <p id="p-rb">Or some circle.. mmm??</p>
                 <label class="c22">1
-                    <input id="circle-one" value='1' name="we tied" type="radio" />
+                    <input id="circle-one" value='1' name="circle" type="radio" />
                 </label>
                 <label class="c22">2
-                    <input id="circle-one" value='2' name="we tied" type="radio" />
+                    <input id="circle-one" value='2' name="circle" type="radio" />
                 </label>
                 <label class="c22">3
-                    <input id="circle-one" value='3' name="we tied" type="radio" />
+                    <input id="circle-one" value='3' name="circle" type="radio" />
                 </label>
             </div>
             <div class="group">
                 <p>Here checkboxes. Don't shy to pick its!</p>
                 <label class='rect'>
                     first
-                    <input class='rect44' value="f" type="checkbox">
+                    <input name="square" class='rect44' value="first" type="checkbox">
 
                 </label>
                 <label class='rect'>
                     second
-                    <input class='rect44' value="s" type="checkbox">
+                    <input name="square"class='rect44' value="second" type="checkbox">
                 </label>
                 <label class='rect'>
                     third
-                    <input class='rect44' value="t" type="checkbox">
+                    <input name="square" class='rect44' value="third" type="checkbox">
                 </label>
             </div>
             <div class="group">
                 <p>Prove you can type:</p>
-                <textarea placeholder="COME ON!!">
+                <textarea name="textarea"
+                placeholder="COME ON!!">
             </textarea>
             </div>
             <button id="submit">Year, Push Me!!</button>

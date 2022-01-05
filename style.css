@@ -56,6 +56,7 @@ header {
 form {
   padding: 10px;
   background: black;
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -175,9 +176,10 @@ button{
   position: relative;
   bottom: 10px;
   color: black;
-  background: firebrick;
+  
+  background:rgb(65, 88, 158);
   border: 0;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 1.1em;
 }
 
@@ -197,4 +199,27 @@ button{
   border-bottom: 2px solid firebrick;
 }
 
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+input[placeholder]          {
+  text-transform: uppercase;
+ font-size: 0.7em;
+ color: #000;
+  
+}
+#number[placeholder]          {
+font-size: 0.8em;
+}
+
+input, textarea {
+  border-radius: 5px;
 }
